@@ -1,17 +1,31 @@
 :root {
     --blue: #009FFD;
     --white: #FFFFFF;
-    --dark-grey: #D3D3D3;
+    --dark-grey: #353535;
     --light-grey: #808080;
     --dark-blue: #005A8F
 }
 
 body {
     background-color: var(--blue);
+    color: white;
 }
 
-li>a {
-    color: var(--dark-blue);
+header{
+    padding-bottom: 5%;
+}
+
+footer{
+    background-color: var(--dark-grey);
+}
+
+
+li>a{
+    color: var(--white);
+    font-style: italic;
+}
+
+li>a:hover {
     font-weight: bold;
 }
 
