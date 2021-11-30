@@ -18,7 +18,6 @@
 
             <ul>
                 <li><a href="manualAdd.php">Add Record Manually</a></li>
-                <li><a href="#">Add Record ISBN</a></li>
             </ul>
 
             <form action="index.php" method="post">
