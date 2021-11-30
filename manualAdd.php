@@ -19,6 +19,7 @@ include "config.php"
     <header>
         <div id="action-centre">
             <h1>Jack's Comics | Add Manually</h1>
+            <h2><a href="./">Return to Home</a></h2>
         </div>
     </header>
 
