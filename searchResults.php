@@ -14,17 +14,11 @@
     <header>
         <div id="action-centre">
 
-            <h1>Jack's Comics</h1>
+            <h1>Jack's Comics | Search Results</h1>
 
             <ul>
-                <li><a href="manualAdd.php">Add Record Manually</a></li>
+                <li><a href="./">Return Home</a></li>
             </ul>
-
-            <form action="searchResults.php" method="post">
-                <label for="criteria">Search Criteria</label>
-                <input type="text" name="criteria" id="criteria">
-                <button type="submit">Search</button>
-            </form>
         </div>
     </header>
 
@@ -36,9 +30,15 @@
                 include "Comic.php";  
                 include "config.php";
 
+                if(isset($_POST["criteria"])){
+                    $criteria = urlencode($_POST["criteria"]);
+                    $sql = "SELECT * FROM comics WHERE isbn LIKE '%$criteria%' or title LIKE '%$criteria%' or mainCharacter LIKE '%$criteria%' or author LIKE '%$criteria%' or year = '$criteria' or rating = '$criteria' ORDER BY `year` desc;";
+                }else{
+                    $sql = "SELECT * FROM comics ORDER BY `year` desc;";
+                }
               
-
-                $sql = "SELECT * FROM comics ORDER BY `year` desc;";
+                echo "<script>console.log(\"$sql\")</script>";
+                
 
                 $loop = $mysqli->query($sql)
                 or die (mysqli_error($dbh));
