@@ -86,7 +86,7 @@ include "config.php"
 
             $mysqli->query($sql);
 
-            echo "<script>console.log(\"$sql\");window.alert('Successfully inserted `$isbn`');window.location.href='./';</script>";
+            echo "<script>window.alert('Successfully inserted `$isbn`');window.location.href='./';</script>";
 
         }
 
