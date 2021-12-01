@@ -105,13 +105,7 @@ if ($isbn != null) {
         <p>Created by Jack Jones</p>
     </footer>
 
-    <script>
-        const currentYear = new Date().getFullYear();
-        const yearInput = document.getElementById("year");
 
-        yearInput.max = currentYear;
-        yearInput.value = currentYear;
-    </script>
 
 </body>
 
