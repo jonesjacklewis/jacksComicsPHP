@@ -95,9 +95,9 @@ class Comic{
 
         <ul>
             <li><a href='$this->link'>Buy on Amazon</a></li>
-            <li><a href='./viewMore?isbn=$this->isbn'>View On Own</a></li>
-            <li><a href='./delete?isbn=$this->isbn'>Delete</a></li>
-            <li><a href='./edit?isbn=$this->isbn'>Edit</a></li>
+            <li><a href='./viewMore.php?isbn=$this->isbn'>View On Own</a></li>
+            <li><a href='./delete.php?isbn=$this->isbn'>Delete</a></li>
+            <li><a href='./edit.php?isbn=$this->isbn'>Edit</a></li>
         </ul>
 
         
