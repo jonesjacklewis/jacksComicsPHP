@@ -27,7 +27,7 @@ include "config.php"
         <div id="action-centre">
             <form action="manualAdd.php" method="post">
 
-                <label for="isbn">ISBN</label>
+                <label for="isbn">ISBN/ASIN</label>
                 <input type="text" name="isbn" id="isbn"> <br>
 
                 <label for="title">Title</label>

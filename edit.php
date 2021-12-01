@@ -70,7 +70,7 @@ if ($isbn != null) {
         <div id="action-centre">
             <form action="edit.php" method="post">
 
-                <label for="isbn">ISBN</label>
+                <label for="isbn">ISBN/ASIN</label>
                 <input type="text" name="isbn" id="isbn" value="<?php echo $isbn ?>"> <br>
 
                 <label for="title">Title</label>
