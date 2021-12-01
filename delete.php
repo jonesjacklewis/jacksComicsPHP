@@ -61,7 +61,7 @@ if ($isbn != null) {
     </header>
 
     <main>
-        <div class="card">
+        <div class="noHoverCard">
             <form action="delete.php" method="post">
 
                 <h2>Are you sure you want to delete the below record</h2>

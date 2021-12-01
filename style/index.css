@@ -61,7 +61,7 @@ a:hover {
 }
 
 
-.card {
+.card, .noHoverCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,8 +80,10 @@ a:hover {
     background-repeat: no-repeat;
  }
 
+ 
 
- .card > img{
+
+ .card > img, .noHoverCard > img{
      width: 75%;
      height: auto;
  }
