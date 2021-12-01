@@ -113,27 +113,6 @@ if ($isbn != null) {
         yearInput.value = currentYear;
     </script>
 
-    <?php
-
-    if (isset($_POST['isbn'])) {
-        $isbn = urlencode($_POST['isbn']);
-        $title = urlencode($_POST['title']);
-        $mainCharacter = urlencode($_POST['mainCharacter']);
-        $author = urlencode($_POST['author']);
-        $year = urlencode($_POST['year']);
-        $link = urlencode($_POST['link']);
-        $rating = urlencode($_POST['rating']);
-        $image = urlencode($_POST['image']);
-
-        $sql = "INSERT INTO `comics` VALUES (null, '$isbn', '$title', '$mainCharacter', '$author', $year, '$link', $rating, '$image');";
-
-        $mysqli->query($sql);
-
-        echo "<script>console.log(\"$sql\");window.alert('Successfully inserted `$isbn`');window.location.href='./';</script>";
-    }
-
-    ?>
-
 </body>
 
 </html>
